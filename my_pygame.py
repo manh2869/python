@@ -1,8 +1,6 @@
 import pygame
 import random
 import drawgrid
-import tail
-import time
 
 pygame.init()
 screen = pygame.display.set_mode((1000, 1000))
@@ -13,7 +11,7 @@ clock = pygame.time.Clock()
 rectx = 24
 recty = 24
 snakes = [[10, 10], [10, 9]]
-direction = "right"
+direction = "down"
 while running:
     screen.fill((255, 255, 255))
     drawgrid.draw_grid(screen, 821, 821, 20)
